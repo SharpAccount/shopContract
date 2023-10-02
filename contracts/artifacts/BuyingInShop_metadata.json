@@ -1,0 +1,251 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "CheckQuerries",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_prodId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "prodCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "shopId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "clientName",
+						"type": "string"
+					}
+				],
+				"name": "buyProd",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "isApproved",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "purshareId",
+						"type": "uint256"
+					}
+				],
+				"name": "confirmOrder",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "purshareId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isConfirmed",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "inviteCode",
+						"type": "uint256"
+					}
+				],
+				"name": "confirmPurshare",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "querryId",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "confirmCode",
+						"type": "uint256"
+					}
+				],
+				"name": "confirmRejectQuerry",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "friendAddress",
+						"type": "address"
+					}
+				],
+				"name": "inviteYourFriend",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum BuyingInShop.Role",
+						"name": "_role",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "makeChangeRoleQuerry",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "purshareId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "shopId",
+						"type": "uint256"
+					}
+				],
+				"name": "payDebt",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "purshareId",
+						"type": "uint256"
+					}
+				],
+				"name": "returnDebt",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "purshareId",
+						"type": "uint256"
+					}
+				],
+				"name": "returnProducts",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "__prodId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_prodCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "supId",
+						"type": "uint256"
+					}
+				],
+				"name": "supply",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/shop(really commented) (1).sol": "BuyingInShop"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/shop(really commented) (1).sol": {
+			"keccak256": "0x93eb942e6210240d120ed82a1600de21a09a1f1096dd65e0c7c09f325f9ebff2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7c6c44b13e3ba9040cd5b0828d6824afdc7d458a81cb5b4509581ba0ca374e63",
+				"dweb:/ipfs/QmeM9hkXCUodhb44yNzRpkDxNYZPW9EWyc7sMT2JDQ2Fx8"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0x7434453e6d3b7d0e5d0eb7846ffdbc27f0ccf3b163591263739b628074dc103a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://49355f780520494d1d5a0f01858385e51bb5280ce0ecfb960f16995065dca395",
+				"dweb:/ipfs/QmSwJ6C5QLz6xKeQZS8wbwjU1KxRFTYfwbGmtzisd5sRW4"
+			]
+		}
+	},
+	"version": 1
+}
